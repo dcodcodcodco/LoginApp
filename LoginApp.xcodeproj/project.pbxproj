@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772A9F9E2615117F00875F6A /* HelloScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A9F9D2615117F00875F6A /* HelloScreenViewController.swift */; };
 		77C771102613CB3700DF8810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C7710F2613CB3700DF8810 /* AppDelegate.swift */; };
 		77C771122613CB3700DF8810 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C771112613CB3700DF8810 /* SceneDelegate.swift */; };
-		77C771142613CB3700DF8810 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C771132613CB3700DF8810 /* ViewController.swift */; };
+		77C771142613CB3700DF8810 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C771132613CB3700DF8810 /* LoginViewController.swift */; };
 		77C771172613CB3700DF8810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C771152613CB3700DF8810 /* Main.storyboard */; };
 		77C771192613CB3800DF8810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C771182613CB3800DF8810 /* Assets.xcassets */; };
 		77C7711C2613CB3800DF8810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C7711A2613CB3800DF8810 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		772A9F9D2615117F00875F6A /* HelloScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloScreenViewController.swift; sourceTree = "<group>"; };
 		77C7710C2613CB3700DF8810 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C7710F2613CB3700DF8810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C771112613CB3700DF8810 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77C771132613CB3700DF8810 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77C771132613CB3700DF8810 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		77C771162613CB3700DF8810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77C771182613CB3800DF8810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C7711B2613CB3800DF8810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			children = (
 				77C7710F2613CB3700DF8810 /* AppDelegate.swift */,
 				77C771112613CB3700DF8810 /* SceneDelegate.swift */,
-				77C771132613CB3700DF8810 /* ViewController.swift */,
+				77C771132613CB3700DF8810 /* LoginViewController.swift */,
+				772A9F9D2615117F00875F6A /* HelloScreenViewController.swift */,
 				77C771152613CB3700DF8810 /* Main.storyboard */,
 				77C771182613CB3800DF8810 /* Assets.xcassets */,
 				77C7711A2613CB3800DF8810 /* LaunchScreen.storyboard */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C771142613CB3700DF8810 /* ViewController.swift in Sources */,
+				77C771142613CB3700DF8810 /* LoginViewController.swift in Sources */,
+				772A9F9E2615117F00875F6A /* HelloScreenViewController.swift in Sources */,
 				77C771102613CB3700DF8810 /* AppDelegate.swift in Sources */,
 				77C771122613CB3700DF8810 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = study.swiftbook.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = study.swiftbook.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
