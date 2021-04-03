@@ -51,7 +51,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Forgot your username ?"/>
                                                 <connections>
-                                                    <action selector="forgotAlertAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJ6-Js-mER"/>
+                                                    <action selector="forgotAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8IL-4g-jrq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-7G-jYU">
@@ -59,7 +59,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="Forgot your password?"/>
                                                 <connections>
-                                                    <action selector="forgotAlertAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="eya-5n-NAR"/>
+                                                    <action selector="forgotAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KnR-ZS-Zkq"/>
                                                 </connections>
                                             </button>
                                         </subviews>
