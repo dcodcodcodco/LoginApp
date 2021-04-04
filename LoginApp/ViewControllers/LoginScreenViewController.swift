@@ -15,6 +15,8 @@ class LoginScreenViewController: UIViewController {
     private let userName = "User"
     private let password = "Password"
     
+    let userPassword = UserPassword.User()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -23,7 +25,8 @@ class LoginScreenViewController: UIViewController {
         guard let helloScreenVC = segue.destination as? HelloScreenViewController else { return }
         helloScreenVC.welcomeTextAgent = userName
     }
-    
+   
+    // MARK: - IBActions
     @IBAction func logInAction() {
         if usernameField.text != userName || passwordField.text != password {
             showAlert(
@@ -32,17 +35,18 @@ class LoginScreenViewController: UIViewController {
                 )
             return
         }
+        performSegue(withIdentifier: "showHelloScreenVC", sender: nil)
     }
     
     @IBAction func forgotAlertAction(_ sender: UIButton) {
         sender.tag == 0
             ? showAlert(
                 title: "Forgot your username?",
-                andMessage: "Your username is 'User'"
+                andMessage: "Your username is '\(userName)'"
             )
             : showAlert(
                 title: "Forgot your password?",
-                andMessage: "Your password is 'Password'"
+                andMessage: "Your password is '\(password)'"
             )
     }
     
@@ -63,3 +67,21 @@ extension LoginScreenViewController {
         present(alert, animated: true)
     }
 }
+
+// MARK: - Work with keyboard
+extension LoginScreenViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usernameField {
+            passwordField.becomeFirstResponder()
+        } else {
+            logInAction()
+        }
+        return true
+    }
+}
+

@@ -12,12 +12,12 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginScreenViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="logi">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="superView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="0tH-7x-C8q">
-                                <rect key="frame" x="16" y="86" width="288" height="206"/>
+                                <rect key="frame" x="16" y="147" width="288" height="206"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-tH-Niz">
                                         <rect key="frame" x="16" y="0.0" width="256" height="93"/>
@@ -26,11 +26,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qkQ-MT-kwB"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9S-va-pyh">
                                                 <rect key="frame" x="0.0" y="59" width="256" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xE7-9e-3Rw"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -75,7 +81,7 @@
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0tH-7x-C8q" secondAttribute="trailing" constant="16" id="9NO-LV-mLU"/>
-                            <constraint firstItem="0tH-7x-C8q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="avL-sP-ASv"/>
+                            <constraint firstItem="0tH-7x-C8q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-34" id="EsI-16-N4V"/>
                             <constraint firstItem="0tH-7x-C8q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eqC-eh-Zch"/>
                         </constraints>
                     </view>
@@ -92,7 +98,7 @@
         <scene sceneID="2dW-po-LYS">
             <objects>
                 <viewController id="Gv9-r0-PNz" customClass="HelloScreenViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ai6-6H-fKL" customClass="Hel">
+                    <view key="view" contentMode="scaleToFill" id="ai6-6H-fKL" userLabel="View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
